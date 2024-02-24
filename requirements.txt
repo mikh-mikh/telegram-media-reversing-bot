@@ -1,4 +1,5 @@
 pyrogram
+pytube
 TgCrypto
 python-dotenv
 hachoir

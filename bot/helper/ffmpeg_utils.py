@@ -4,7 +4,11 @@ import json
 import time
 import ffmpeg
 from subprocess import call, check_output
+<<<<<<< HEAD
 from bot import segment_size
+=======
+from bot import download_dir
+>>>>>>> refs/remotes/origin/feature
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 

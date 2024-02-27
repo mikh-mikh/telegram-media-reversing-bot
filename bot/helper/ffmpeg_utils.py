@@ -4,7 +4,11 @@ import json
 import time
 import ffmpeg
 from subprocess import call, check_output
+<<<<<<< HEAD
+from bot import segment_size
+=======
 from bot import download_dir
+>>>>>>> refs/remotes/origin/feature
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 
@@ -33,7 +37,7 @@ def encode_video(filepath):
     assert(output_filepath != filepath)
     # Check file size, if larger than 100MB, split the file
     file_size = os.path.getsize(filepath)
-    chunk_size = download_dir * 1024 * 1024  # 30MB in bytes
+    chunk_size = chunk_size * 1024 * 1024  # 30MB in bytes
     if file_size > chunk_size:
         # Split the file into chunks
         chunk_prefix = basefilepath + '_part_'
